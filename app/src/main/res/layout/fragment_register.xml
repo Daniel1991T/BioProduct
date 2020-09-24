@@ -12,19 +12,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/aclonica"
+        android:textColor="@color/colorPrimary"
         android:text="@string/register"
         android:textAlignment="center"
         android:textSize="50sp" />
 
     <TextView
         android:id="@+id/tv_subtitle"
+        android:textColor="@color/colorPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/roboto"
         android:text="@string/tag"
         android:textSize="17sp" />
@@ -104,6 +106,32 @@
             android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+    
+    <RadioGroup
+        android:id="@+id/radio_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginEnd="25dp"
+        tools:ignore="RtlHardcoded">
+        <RadioButton
+            android:buttonTint="@color/colorPrimaryDark"
+            android:id="@+id/rb_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_check_client"
+            android:checked="true"
+            android:textColor="@color/colorPrimary"/>
+        <RadioButton
+            android:layout_marginStart="10dp"
+            android:id="@+id/rb_producer"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_check_producer"
+            android:textColor="@color/colorPrimary"/>
+    </RadioGroup>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -138,7 +166,8 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/roboto"
             android:text="@string/swipe_right_for_login"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"/>
 
     </RelativeLayout>
 
